@@ -1,0 +1,9 @@
+name: openclaw
+icon: openclaw
+title: OpenClaw
+
+services:
+- name: openclaw
+  title: OpenClaw
+  service: openclaw
+  required: true
