@@ -7,3 +7,11 @@ services:
   title: OpenClaw
   service: openclaw
   required: true
+
+- name: tailscale
+  title: Tailscale
+  service: tailscale
+  required: true
+  links:
+  - name: serve
+    service: openclaw
