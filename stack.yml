@@ -2,16 +2,14 @@ name: openclaw
 icon: openclaw
 title: OpenClaw
 
+access:
+  required: true
+  provider: tailscale
+  mode: private_network
+  scope: entire_app
+
 services:
 - name: openclaw
   title: OpenClaw
   service: openclaw
   required: true
-
-- name: tailscale
-  title: Tailscale
-  service: tailscale
-  required: true
-  links:
-  - name: serve
-    service: openclaw
