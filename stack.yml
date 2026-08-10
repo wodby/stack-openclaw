@@ -4,7 +4,6 @@ title: OpenClaw
 
 access:
   required: true
-  provider: tailscale
   mode: private_network
   scope: entire_app
 
