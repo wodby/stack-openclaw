@@ -5,6 +5,19 @@ Deploy OpenClaw applications on Kubernetes with Wodby.
 This repository defines the Wodby stack manifests and default service
 composition for OpenClaw.
 
+## Open the Control UI
+
+The stack requires Private network access for the entire app, so OpenClaw gets
+no public address. After the first deployment:
+
+1. Connect your device to the Access provider's private network.
+2. Open the address listed under **Endpoints > Domains**.
+3. Paste the `gateway_token` token into **Gateway secret**.
+4. Approve the browser once. In a web terminal, run `openclaw devices list`,
+   then `openclaw devices approve <requestId>`.
+
+See the [OpenClaw guide](https://wodby.com/docs/2.0/stacks/catalog/openclaw/).
+
 <!-- wodby:generated:start -->
 
 ## Stack contract
